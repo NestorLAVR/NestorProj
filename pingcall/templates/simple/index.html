@@ -1,0 +1,17 @@
+<head>
+<meta charset="UTF-8">
+<title>Information from query</title>
+</head>
+<body>
+
+
+<form action="" method="POST">
+{% csrf_token %}
+{{ form.as_p }}
+<input type="Submit" name="submit" value="Submit"/>
+</form>
+
+{% if submitbutton == "Submit" %}
+<img src="data:image/png;base64,{{ data }}" alt="" height="600" ,width="600">
+{% endif %}
+</body>
